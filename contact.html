@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Webslide</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <div class="sq-yellow"></div>
+          <div class="sq-blue"></div>
+          <div class="sq-pink"></div>
+        </div>
+        <span class="logo-text">webslide</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="nav-cta active">Get Started</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+      <h1>Get in Touch</h1>
+      <p>
+        Tell us about your project and we'll get back to you within one business
+        day.
+      </p>
+    </div>
+
+    <!-- Contact Form & Info -->
+    <div class="section">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form">
+          <h2
+            class="section-title"
+            style="font-size: 1.4rem; margin-bottom: 20px"
+          >
+            Send us a message
+          </h2>
+          <form
+            id="contact-form"
+            method="POST"
+            action="https://formspree.io/f/xpqkvpvk"
+            novalidate
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New enquiry from Webslide.co"
+            />
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jane Smith"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@yourbusiness.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number (optional)</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(250) 555-0100"
+              />
+            </div>
+            <div class="form-group">
+              <label for="package">Which package interests you?</label>
+              <select id="package" name="package">
+                <option value="">-- Select a package --</option>
+                <option value="small">Small (1–3 pages) — $497 + $697</option>
+                <option value="medium">
+                  Medium (4–6 pages) — $497 + $1,497
+                </option>
+                <option value="large">
+                  Large (7–10 pages) — $497 + $2,997+
+                </option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your business</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="What does your business do? What do you need your website to achieve?"
+                required
+              ></textarea>
+            </div>
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+            <button type="submit" class="btn btn-yellow" id="form-submit">
+              Send Message
+            </button>
+            <p
+              style="
+                font-size: 0.82rem;
+                color: var(--gray-text);
+                margin-top: 10px;
+              "
+            >
+              We respond within one business day. No spam, ever.
+            </p>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Other ways to reach us</h3>
+          <p>
+            <span class="contact-icon"><i data-lucide="mail"></i></span>
+            <a href="mailto:iamkeegan.bagnall@gmail.com">iamkeegan.bagnall@gmail.com</a>
+          </p>
+          <p><span class="contact-icon"><i data-lucide="map-pin"></i></span> Nanaimo, BC, Canada</p>
+          <p><span class="contact-icon"><i data-lucide="clock"></i></span> Mon – Fri, 9am – 5pm PST</p>
+
+          <div style="margin-top: 30px">
+            <h3>Before you reach out</h3>
+            <p style="margin-top: 8px">It helps to have a rough idea of:</p>
+            <ul class="values-list" style="margin-top: 8px">
+              <li>What your business does</li>
+              <li>How many pages you think you need</li>
+              <li>Any websites you like the look of</li>
+              <li>Your rough timeline</li>
+            </ul>
+          </div>
+
+          <div
+            style="
+              margin-top: 30px;
+              background-color: var(--gray-light);
+              border-radius: 8px;
+              padding: 20px;
+            "
+          >
+            <p style="font-weight: 700; color: var(--dark); margin-bottom: 6px">
+              First month free
+            </p>
+            <p style="font-size: 0.88rem; color: var(--gray-text)">
+              Every new client gets their first month of hosting at no cost. No
+              credit card required to start the conversation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Placeholder -->
+    <div class="section-bg">
+      <div class="section" style="text-align: center">
+        <h2 class="section-title">Based in Nanaimo, BC</h2>
+        <p class="section-subtitle" style="margin: 0 auto 24px">
+          We work with clients all across Canada — fully remote and online.
+        </p>
+        <div
+          style="
+            background-color: var(--gray-mid);
+            border-radius: 10px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+            font-size: 0.95rem;
+          "
+        >
+          <span class="contact-icon" style="justify-content:center;margin-right:6px"><i data-lucide="map-pin"></i></span> Nanaimo, British Columbia, Canada
+        </div>
+        <p
+          style="margin-top: 14px; font-size: 0.88rem; color: var(--gray-text)"
+        >
+          Learn more about Nanaimo at
+          <a href="https://www.nanaimo.ca" target="_blank">nanaimo.ca</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-text">webslide</span>
+          <p>A better way to create websites.<br />Nanaimo, BC, Canada.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Webslide. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const form = document.getElementById("contact-form");
+      const status = document.getElementById("form-status");
+      const submitBtn = document.getElementById("form-submit");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        if (!name || !email || !message) {
+          status.textContent = "Please fill in your name, email, and message.";
+          status.className = "form-status form-status--error";
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending…";
+        status.textContent = "";
+        status.className = "form-status";
+
+        try {
+          const res = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { Accept: "application/json" },
+          });
+
+          if (res.ok) {
+            status.textContent =
+              "Message sent! We'll get back to you within one business day.";
+            status.className = "form-status form-status--success";
+            form.reset();
+          } else {
+            const json = await res.json();
+            const msg = json.errors
+              ? json.errors
+                  .map(function (err) {
+                    return err.message;
+                  })
+                  .join(", ")
+              : "Something went wrong. Please try again or email us directly.";
+            status.textContent = msg;
+            status.className = "form-status form-status--error";
+          }
+        } catch (_) {
+          status.textContent =
+            "Something went wrong. Please try again or email us directly.";
+          status.className = "form-status form-status--error";
+        }
+
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send Message";
+      });
+    </script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>lucide.createIcons();</script>
+  </body>
+</html>
